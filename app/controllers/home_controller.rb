@@ -69,7 +69,7 @@ class HomeController < ApplicationController
 
       if( resultado != nil)
          @resposta += "<p>"
-         @resposta += "Concurso => " + item["Concurso"][0] + " Premio: " + resultado  + " Valor - " + item['Pre_'+resultado+'_Val'][0] + " " + comb + "</hr>"
+         @resposta += "Concurso: " + item["Concurso"][0] + " Premio: " + resultado  + " Valor: " + item['Pre_'+resultado+'_Val'][0] + "€  Combinação:" + comb + "</hr>"
          @resposta += "</p>"
       end  
 end   
