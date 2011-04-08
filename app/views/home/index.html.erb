@@ -1,0 +1,8 @@
+<%= form_tag '/' do %>
+<%= text_field_tag :name, params[:name] %>
+<% end %>
+
+<div id="movies">
+</div>
+
+<%= @resposta.html_safe %>
