@@ -77,7 +77,7 @@ end
     #@euro = { :name => "ola"}
     
     respond_to do |format|
-      format.html { render :html => @resposta }# show.html.erb
+      format.html { render :html => @resposta.html_safe }# show.html.erb
     end
     
   end
